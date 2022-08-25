@@ -12,12 +12,24 @@
     }
   /* Header/Blog Title */
   .header {
-    padding: 10px;
+    padding: 20px;
     text-align: center;
-    background: white;
+    background: #21618C; /*white;*/
+    color: #F4F6F7;
   }
   .header h1 {
-  font-size: 40px;
+  font-size: 32px;
+  font-weight:bold;
+  }
+  .header h2 {
+  font-size: 25px;
+  font-weight:normal;
+  color: #DDF2FB;
+  }
+  .header h3 {
+  font-size: 20px;
+  font-weight:normal;
+  color: #D0D3D4;
   }
   .content {
     text-align: justify;
@@ -25,58 +37,200 @@
   .content h2 {
   font-size: 30px;
   }  
+  /* Style the tab */
+  .tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #CACFD2;
+  }
+
+  /* Style the buttons inside the tab */
+  .tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+  }
+
+  /* Change background color of buttons on hover */
+  .tab button:hover {
+    background-color: #ddd;
+  }
+
+  /* Create an active/current tablink class */
+  .tab button.active {
+    background-color: #ccc;
+  }
+
+  /* Style the buttons inside the tab */
+  .tab a {
+    text-decoration: none;
+    color: initial;
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+  }
+
+  /* Change background color of buttons on hover */
+  .tab a:hover {
+    background-color: #ddd;
+  }
+
+  /* Style the tab content */
+  .tabcontent {
+    margin-left: 20px;
+    margin-right: 20px;
+    font-weight:normal;
+    font-size: 17px;
+  } 
+
+  .tabcontent h1 {
+    font-size: 20px;
+    font-weight:bold;
+  }
+
+  .tabcontent h2 {
+    margin-top: 30px;
+    font-size: 20px;
+    font-weight:normal;
+  }
+
+  .tabcontent h3 {
+    margin-top: 30px;
+    font-size: 20px;
+    font-weight:bold;
+  }
+
+  .alink:link, .alink:visited {
+   color:inherit;
+}
+
   </style>
 </head>
 
 <body>
 
-<div class="header">
-<h1> Workshop on Accelerator Design As Provably Correct Software (ADAPTOR)</h1>
+
+<div id="ADAPTOR" class="header">
+  <h1> 1st Workshop on Accelerator Design As Provably Correct Software</h1>
+  <h2> October 1st 2022, Saturday, 1pm - 5pm CDT </h2>
+  <h3> in conjunction with the 55th IEEE/ACM International Symposium on Microarchitecture (<a class="alink" href="https://www.microarch.org/micro55/">MICRO'22</a>) </h3> 
 </div>
+
+
+<div class="tab">
+  <a class="tablinks" href="#ADAPTOR">Home</a>
+  <a class="tablinks" href="#Speakers">Speakers</a>
+  <a class="tablinks" href="#Program">Program</a>
+  <a class="tablinks" href="#Venue">Venue</a>
+  <a class="tablinks" href="#Organizers">Organizers</a>
+</div>
+
+
+
+
+<div id="Home" class="tabcontent">
+    <h2><b>ADAPTOR 2022</b>
+    is the first workshop on <b>A</b>ccelerator <b>D</b>esign 
+  <b>A</b>s <b>P</b>rovably Correc<b>T</b> S<b>O</b>ftwa<b>R</b>e.
+  </h2> 
+ <!--- 
+  It will be held as part of the 55th IEEE/ACM International Symposium on 
+  Microarchitecture (<a href=https://www.microarch.org/micro55/">MICRO'22</a>).</p>
+ -->
+</div>
+
+
+
+
+
+<div id="Why" class="tabcontent">
+  <h3>Hardware Accelerator meets Formal Verification</h3>
+  <p>
+    We are in a golden era of rapid accelerator architecture innovations driven by 
+    emerging applications where the pure pursuit of FLOPS in hardware design with 
+    generality and abstraction is being replaced with targeted specialization. 
+    Hardware accelerators have become one of the most critical functional blocks 
+    of modern heterogeneous computer architectures. 
+    These accelerators implement domain-specific functions for machine learning and inference, 
+    edge intelligence, secure computing, and so on to improve power efficiency and computation 
+    throughput by several orders of magnitude. At the same time, the existing design practice 
+    cannot keep up with the pace of innovations due to the exponentially increasing complexity 
+    and cost. In particular, verification of functional correctness has become a major factor in 
+    design complexity and cost, and the trend is worsening.
+  </p>
+
+  <p>This calls for a design paradigm shift including raising the level of abstraction in 
+    hardware design to software, scalable and composable verification, and a new programming 
+    model amenable for rapid verification, etc.
+    Recent work presented at MICRO/ISCA/FMCAD/PLDI/POPL and other sister conferences indicates 
+    a substantial number of researchers in the community with interests in the intersection of 
+    accelerator architecture, design, and verification.
+  </p> 
+
+  
+
+  <h3>Objectives of the Workshop</h3>
+
+  <p>This workshop intends to provide a forum to bring researchers from domain-specific 
+    languages and compilers, architecture, and formal methods communities with common 
+    interests at the intersection of accelerator architecture, design, and 
+    verification together to cross-pollinate ideas. We believe that only with interdisciplinary 
+    collaboration we can arrest the design complexity and cost trend to keep up with the pace of 
+    architectural innovations.
+  </p>
+</div>
+
+
+
+<div id="Speakers" class="tabcontent">
+  <h3>Speakers</h3>
+  <p>To be added... </p>
+</div>
+
+
+
+<div id="Program" class="tabcontent">
+  <h3>Program</h3>
+  <p>To be added... </p>
+</div>
+
+
+
+<div id="Venue" class="tabcontent">
+  <h3>Venue</h3>
+  <p>Time: October 1st 2022 (Saturday) Afternoon 1 pm - 5 pm CDT </p>
+
+  <p>
+  Address: The Westin Chicago River North, 320 N Dearborn St, Chicago, IL 60654 
+  </p>
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2970.223359172263!2d-87.632066483536!3d41.88805327276838!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880fae05d61b9a5d%3A0x32a4fcadac82b32a!2sThe%20Westin%20Chicago%20River%20North!5e0!3m2!1sen!2sus!4v1660805197744!5m2!1sen!2sus" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+
+<br>
+
+<div id="Organizers" class="tabcontent">
+  <h3>Organizers</h3>
+  <ul>
+    <li><b><a class="alink" href="https://www.linkedin.com/in/jin-yang-2532391/">Jin Yang</a></b>, Intel Labs, USA (co-chair)</li>
+    <li><b><a class="alink" href="https://www.csl.cornell.edu/~zhiruz/">Zhiru Zhang</a></b>, Cornell University, USA (co-chair)</li>
+    <li><b><a class="alink" href="https://ece.uic.edu/profiles/pal-debjit/">Debjit Pal</a></b>, U of Illinois at Chicago, USA (co-chair)</li>
+    <li><b><a class="alink" href="https://caslab.csl.yale.edu/~wen/">Wen Wang</a></b>, Intel Labs, USA (co-chair)</li>
+  </ul>
+</div>
+
+
 <!--<p>I'm hosted with GitHub Pages.</p>-->
 
-<br></br>
-
-<div class="content">
-<h2>Home</h2>
-</div>
-<b>ADAPTOR</b> is the first workshop on <b>A</b>ccelerator <b>D</b>esign <b>A</b>s <b>P</b>rovably Correc<b>T</b> S<b>O</b>ftwa<b>R</b>e. It will be held as part of the 55th IEEE/ACM International Symposium on Microarchitecture (<a href=https://www.microarch.org/micro55/">MICRO'22</a>).
-
-<div class="content">
-<h2>Why?</h2>
-<p>We are in a golden era of rapid accelerator architecture innovations driven by emerging applications where the pure pursuit of FLOPS in hardware design with generality and abstraction is being replaced with targeted specialization. Hardware accelerators have become one of the most critical functional blocks of modern heterogeneous computer architectures. These accelerators implement domain-specific functions for machine learning and inference, edge intelligence, secure computing, and so on to improve power efficiency and computation throughput by several orders of magnitude. At the same time, the existing design practice cannot keep up with the pace of innovations due to the exponentially increasing complexity and cost. In particular, verification of functional correctness has become a major factor in design complexity and cost, and the trend is worsening.</p>
-
-<p>This calls for a design paradigm shift including raising the level of abstraction in hardware design to software, scalable and composable verification, and a new programming model amenable for rapid verification, etc.</p>
-
-<p>Recent work presented at MICRO/ISCA/FMCAD/PLDI/POPL and other sister conferences indicates a substantial number of researchers in the community with interests in the intersection of accelerator architecture, design, and verification.</p>
-</div>
-
-<div class="content">
-<h2>What?</h2>
-We intend this workshop to provide a forum to bring researchers from domain-specific languages and compilers, architecture, and formal methods communities with common interests at the intersection of accelerator architecture, design, and verification together to cross-pollinate ideas. We believe that only with interdisciplinary collaboration we can arrest the design complexity and cost trend to keep up with the pace of architectural innovations.
-</div>
-
-<div class="content">
-<h2>When?</h2>
-October 1, 2022 (Saturday) Afternoon 1 pm - 5.00 pm CDT 
-</div>
-
-<div class="content">
-<h2>Where?</h2>
-The Westin Chicago River North, 320 N Dearborn St, Chicago, IL 60654 
-<br></br><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2970.223359172263!2d-87.632066483536!3d41.88805327276838!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880fae05d61b9a5d%3A0x32a4fcadac82b32a!2sThe%20Westin%20Chicago%20River%20North!5e0!3m2!1sen!2sus!4v1660805197744!5m2!1sen!2sus" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-</div>
-
-<div class="content">
-<h2>Organizers</h2>
-<!--<b>ADAPTOR</b> is brought to you by:-->
-<ul>
-  <li><b><a href="https://www.linkedin.com/in/jin-yang-2532391/">Jin Yang</a></b>, Intel Labs, USA (co-chair)</li>
-  <li><b><a href="https://www.csl.cornell.edu/~zhiruz/">Zhiru Zhang</a></b>, Cornell University, USA (co-chair)</li>
-  <li><b><a href="https://ece.uic.edu/profiles/pal-debjit/">Debjit Pal</a></b>, U of Illinois at Chicago, USA (co-chair)</li>
-  <li><b><a href="https://www.linkedin.com/in/wen-wang-0316b8137/">Wen Wang</a></b>, Intel Labs, USA (co-chair)</li>
-</ul>
-</div>
 
 </body>
 </html>
