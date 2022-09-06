@@ -1,0 +1,17 @@
+====================================================================================
+Title: Scalable Equivalence Checking for Behavioral Synthesis
+Name: Fei Xie
+Abstract: In this talk, we present a scalable equivalence checking framework for behavioral synthesis. Behavioral synthesis entails application of a sequence of transformations to compile a high-level description of a hardware design (e.g., in C/C++/SystemC) into a register-transfer level (RTL) implementation. Our framework covers behavioral synthesis flows end-to-end, including compiler transformations, scheduling, and binding and code generation. This framework achieves its scalability through close integration with behavioral synthesis flows. 
+Bio: Fei Xie is a professor in the Department of Computer Science, Portland State University. His research interests are primarily in the areas of embedded systems, software engineering, and formal methods. He is particularly interested in development of formal method based techniques and tools for building safe, secure, and reliable software and embedded systems.
+
+====================================================================================
+Title: Towards A Formally Verified FHE Accelerator Design
+Authors: Jeremy Casas, Zhenkun Yang, Jin Yang
+Abstract: Correctness assurance needs to be a first principle in accelerator design, especially for security and privacy applications. We will provide an overview of our approach on designing a formally verified FHE (Fully Homomorphic Encryption) accelerator. It starts with developing a behavioral micro-architecture model of the accelerator and establishing its correctness against its ISA specification by combining modular formal verification with a correct-by-construction argument similar to compiler verification. Each micro-architecture module is then refined with algorithmic details optimized for hardware implementation through a sequence of semantic preserving transformations. Finally, the functional equivalence between the refined module and its manual RTL implementation is formally verified. As a proof-of-concept, an RTL model is also automatically generated from the behavioral model through high level synthesis (HLS).
+
+====================================================================================
+Name: Gilbert Bernstein 
+
+====================================================================================
+Name: Chris Leary
+
