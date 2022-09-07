@@ -13,5 +13,6 @@ Abstract: Correctness assurance needs to be a first principle in accelerator des
 Name: Gilbert Bernstein 
 
 ====================================================================================
+Title: Formal successes & frontiers in XLS' High Level Synthesis toolchain
 Name: Chris Leary
-
+Abstract: In this talk we describe aspects of formal incorporated and explored in development of the XLS high level synthesis toolchain (github.com/google/xls). The XLS toolchain is used to design hardware blocks via a software-engineering style methodology, yet every operation in XLS' Intermediate Representation can be projected into SMTLib. This property has enabled project successes such as a proving unoptimized IR equivalent to optimized IR, HLS-to-gates Logical Equivalence Checking flow, formal verification of floating point units, and "concolic" test case generation. We'll touch on the promise of being "under the workload" in the XLS compiler, and thereby able to project the input program and annotations on it into formal models for domain-specific theorem proving. We'll also discuss the mixed promise and peril we observe for undefined behavior and exploiting user-specified assumptions. Additionally, we'll cover how this is all developed in open source using open theorem proving engines, and has tie-ins to the broader ecosystem of open hardware toolchains and PDKs that we're co-developing at Google.
