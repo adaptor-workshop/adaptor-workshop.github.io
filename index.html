@@ -115,6 +115,22 @@
     font-weight:bold;
   }
 
+  .tabcontent h4 {
+    margin-top: -10px;
+    /* margin-left: 20px; */
+    margin-bottom: 0px;
+    font-size: 16px;
+    font-weight:bold;
+    /* font-style:italic; */
+  }
+
+  .tabcontent h5 {
+    margin-top: 8px;
+    /* margin-left: 20px; */
+    font-size: 15px;
+    font-weight:normal;
+  }
+
   .alink:link, .alink:visited {
    color:inherit;
 }
@@ -205,7 +221,55 @@
 
 <div id="Speakers" class="tabcontent">
   <h3>Speakers</h3>
-  <p>To be announced soon! </p>
+  
+  <ul>
+  <li>
+    <p><b>Chris Leary</b>, Senior Staff Software Engineer at Google</p>
+    <h4 style="font-weight: normal">
+      Talk details to be added soon... 
+    </h4>
+  </li>
+
+  <li>
+  <p><b>Caroline Trippel</b>, Assistant Professor at Stanford University</p>
+  <h4 style="font-weight: normal">
+    Talk details to be added soon... 
+    </h4>
+  </li>
+
+  <li>
+  <p><b>Fei Xie</b>, Professor at Portland State University 
+  <h4>
+  Talk: Scalable Equivalence Checking for Behavioral Synthesis 
+  </h4>
+  <h5>
+    Abstract: In this talk, we present a scalable equivalence checking framework for behavioral synthesis. Behavioral synthesis entails application of a sequence of transformations to compile a high-level description of a hardware design (e.g., in C/C++/SystemC) into a register-transfer level (RTL) implementation. Our framework covers behavioral synthesis flows end-to-end, including compiler transformations, scheduling, and binding and code generation. This framework achieves its scalability through close integration with behavioral synthesis flows.
+  </h5>
+  </p>
+</li>
+
+<li>
+  <p><b>Gilbert Bernstein</b>, Assistant Professor at the University of Washington</p>
+
+  <h4 style="font-weight: normal">
+    Talk details to be added soon... 
+    </h4>
+  </li>
+
+  <li>
+
+  <p><b>Jin Yang</b>, Senior Principal Engineer at Intel Corp.</p>
+  <h4>
+    Talk: Towards A Formally Verified FHE Accelerator Design 
+    </h4>
+    <h5>
+      Correctness assurance needs to be a first principle in accelerator design, especially for security and privacy applications. We will provide an overview of our approach on designing a formally verified FHE (Fully Homomorphic Encryption) accelerator. It starts with developing a behavioral micro-architecture model of the accelerator and establishing its correctness against its ISA specification by combining modular formal verification with a correct-by-construction argument similar to compiler verification. Each micro-architecture module is then refined with algorithmic details optimized for hardware implementation through a sequence of semantic preserving transformations. Finally, the functional equivalence between the refined module and its manual RTL implementation is formally verified. As a proof-of-concept, an RTL model is also automatically generated from the behavioral model through high level synthesis (HLS).
+</h5>
+    </p>
+  </li>
+
+  </ul>
+
 </div>
 
 
