@@ -116,12 +116,59 @@
   }
 
   .tabcontent h4 {
-    margin-top: -10px;
+    /* margin-top: -10px; */
     /* margin-left: 20px; */
     margin-bottom: 0px;
     font-size: 16px;
     font-weight:bold;
     /* font-style:italic; */
+  }
+
+  .st table {
+    width: 100%;
+    table-layout: fixed;
+  }
+
+  .st tr:nth-child(odd) {
+    background-color: #eeea;
+  }
+
+  .std {
+    vertical-align: top;
+  }
+
+  .sr {
+    width: 65%;
+    font-size: 16px;
+    font-weight:bold;
+  }
+
+  .sl {
+    width: 35%;
+    vertical-align: top;
+    font-size: 16px;
+  }
+
+  .sr1 {
+    font-weight: bold;
+    font-size: 17px;
+  }
+  .sr1mute {
+    font-weight: normal;
+    font-size: 17px;
+  }
+
+  .sr2 {
+    margin-top: 6px;
+    font-size: 15px;
+    font-weight: normal
+  }
+
+  .sr2mute {
+    display: none;
+    margin-top: 8px;
+    font-size: 15px;
+    font-weight: normal
   }
 
   .tabcontent h5 {
@@ -151,7 +198,7 @@
 
 <div class="tab">
   <a class="tablinks" href="#ADAPTOR">Home</a>
-  <a class="tablinks" href="#Speakers">Speakers</a>
+  <a class="tablinks" href="#Speakers">Invited Speakers and Talks</a>
   <a class="tablinks" href="#Program">Program</a>
   <a class="tablinks" href="#Venue">Venue</a>
   <a class="tablinks" href="#Organizers">Organizers</a>
@@ -165,15 +212,6 @@
     We will have invited speakers from industry and academia to share
     their pioneering work at the <em>intersection of accelerator architecture, design, and 
     verification.</em> </b> </h2>
-  <!--  <h2><b>ADAPTOR 2022</b>
-    is the first workshop on <b>A</b>ccelerator <b>D</b>esign 
-  <b>A</b>s <b>P</b>rovably Correc<b>T</b> S<b>O</b>ftwa<b>R</b>e.
-  </h2> 
--->
- <!--- 
-  It will be held as part of the 55th IEEE/ACM International Symposium on 
-  Microarchitecture (<a href=https://www.microarch.org/micro55/">MICRO'22</a>).</p>
- -->
 </div>
 
 
@@ -218,60 +256,77 @@
 </div>
 
 
-
 <div id="Speakers" class="tabcontent">
-  <h3>Speakers</h3>
+  <h3>Invited Speakers and Talks</h3>
+
   
-  <ul>
-  <li>
-    <p><b>Chris Leary</b>, Senior Staff Software Engineer at Google</p>
-    <h4 style="font-weight: normal">
-      Talk: Formal successes & frontiers in XLS' High Level Synthesis toolchain
-    </h4>
-    <h5>
-      Abstract: In this talk we describe aspects of formal incorporated and explored in development of the XLS high level synthesis toolchain (github.com/google/xls). The XLS toolchain is used to design hardware blocks via a software-engineering style methodology, yet every operation in XLS' Intermediate Representation can be projected into SMTLib. This property has enabled project successes such as a proving unoptimized IR equivalent to optimized IR, HLS-to-gates Logical Equivalence Checking flow, formal verification of floating point units, and "concolic" test case generation. We'll touch on the promise of being "under the workload" in the XLS compiler, and thereby able to project the input program and annotations on it into formal models for domain-specific theorem proving. We'll also discuss the mixed promise and peril we observe for undefined behavior and exploiting user-specified assumptions. Additionally, we'll cover how this is all developed in open source using open theorem proving engines, and has tie-ins to the broader ecosystem of open hardware toolchains and PDKs that we're co-developing at Google.
-      </h5>
-  </li>
+<table class="st" cellspacing="0" cellpadding="18" border="0">
+  <colgroup valign="top">
+    <col class="sl" />
+    <col class="sr" />
+  </colgroup>
+  <tr>
+      <td class="std">
+        <div class="sr1">Chris Leary</div>
+        <div class="sr2">Senior Staff Software Engineer at Google</div>
+      </td>
+      <td class="std">
+        <div class="sr1">Keynote: Formal successes & frontiers in XLS' High Level Synthesis toolchain</div>
+        <div class="sr2">Abstract:
+        In this talk we describe aspects of formal incorporated and explored in development of the XLS high level synthesis toolchain (github.com/google/xls). The XLS toolchain is used to design hardware blocks via a software-engineering style methodology, yet every operation in XLS' Intermediate Representation can be projected into SMTLib. This property has enabled project successes such as a proving unoptimized IR equivalent to optimized IR, HLS-to-gates Logical Equivalence Checking flow, formal verification of floating point units, and "concolic" test case generation. We'll touch on the promise of being "under the workload" in the XLS compiler, and thereby able to project the input program and annotations on it into formal models for domain-specific theorem proving. We'll also discuss the mixed promise and peril we observe for undefined behavior and exploiting user-specified assumptions. Additionally, we'll cover how this is all developed in open source using open theorem proving engines, and has tie-ins to the broader ecosystem of open hardware toolchains and PDKs that we're co-developing at Google.
+        </div>
+      </td>
+  </tr>
+  <tr>
+  <td class="std">
+    <div class="sr1">Caroline Trippel</div>
+    <div class="sr2">Assistant Professor at Stanford University</div>
+  </td>
+  <td class="std">
+    <div class="sr1mute">Invited talk details to be added soon...</div>
+    <div class="sr2mute">Abstract:
+</div>
+  </td>
+</tr>
+<tr>
+  <td class="std">
+    <div class="sr1">Fei Xie</div>
+    <div class="sr2">Professor at Portland State University</div>
+  </td>
+  <td class="std">
+    <div class="sr1">Invited talk: Scalable Equivalence Checking for Behavioral Synthesis</div>
+    <div class="sr2">Abstract: In this talk, we present a scalable equivalence checking framework for behavioral synthesis. Behavioral synthesis entails application of a sequence of transformations to compile a high-level description of a hardware design (e.g., in C/C++/SystemC) into a register-transfer level (RTL) implementation. Our framework covers behavioral synthesis flows end-to-end, including compiler transformations, scheduling, and binding and code generation. This framework achieves its scalability through close integration with behavioral synthesis flows.
+    </div>
+  </td>
+</tr>
 
-  <li>
-  <p><b>Caroline Trippel</b>, Assistant Professor at Stanford University</p>
-  <h4 style="font-weight: normal">
-    Talk details to be added soon... 
-    </h4>
-  </li>
+<tr>
+  <td class="std">
+    <div class="sr1">Gilbert Bernstein</div>
+    <div class="sr2">Assistant Professor at the University of Washington</div>
+  </td>
+  <td class="std">
+    <div class="sr1mute">Invited talk details to be added soon...     </div>
+    <div class="sr2mute">Abstract:
+  </div>
+  </td>
+  </tr>
 
-  <li>
-  <p><b>Fei Xie</b>, Professor at Portland State University 
-  <h4>
-  Talk: Scalable Equivalence Checking for Behavioral Synthesis 
-  </h4>
-  <h5>
-    Abstract: In this talk, we present a scalable equivalence checking framework for behavioral synthesis. Behavioral synthesis entails application of a sequence of transformations to compile a high-level description of a hardware design (e.g., in C/C++/SystemC) into a register-transfer level (RTL) implementation. Our framework covers behavioral synthesis flows end-to-end, including compiler transformations, scheduling, and binding and code generation. This framework achieves its scalability through close integration with behavioral synthesis flows.
-  </h5>
-  </p>
-</li>
+  <tr>
+    <td class="std">
+      <div class="sr1">Jin Yang</div>
+      <div class="sr2">Senior Principal Engineer at Intel Corp.</div>
+    </td>
+    <td class="std">
+      <div class="sr1">Invited talk: Towards A Formally Verified FHE Accelerator Design</div>
+      <div class="sr2">      Abstract: Correctness assurance needs to be a first principle in accelerator design, especially for security and privacy applications. We will provide an overview of our approach on designing a formally verified FHE (Fully Homomorphic Encryption) accelerator. It starts with developing a behavioral micro-architecture model of the accelerator and establishing its correctness against its ISA specification by combining modular formal verification with a correct-by-construction argument similar to compiler verification. Each micro-architecture module is then refined with algorithmic details optimized for hardware implementation through a sequence of semantic preserving transformations. Finally, the functional equivalence between the refined module and its manual RTL implementation is formally verified. As a proof-of-concept, an RTL model is also automatically generated from the behavioral model through high level synthesis (HLS).
 
-<li>
-  <p><b>Gilbert Bernstein</b>, Assistant Professor at the University of Washington</p>
-
-  <h4 style="font-weight: normal">
-    Talk details to be added soon... 
-    </h4>
-  </li>
-
-  <li>
-
-  <p><b>Jin Yang</b>, Senior Principal Engineer at Intel Corp.</p>
-  <h4>
-    Talk: Towards A Formally Verified FHE Accelerator Design 
-    </h4>
-    <h5>
-      Abstract: Correctness assurance needs to be a first principle in accelerator design, especially for security and privacy applications. We will provide an overview of our approach on designing a formally verified FHE (Fully Homomorphic Encryption) accelerator. It starts with developing a behavioral micro-architecture model of the accelerator and establishing its correctness against its ISA specification by combining modular formal verification with a correct-by-construction argument similar to compiler verification. Each micro-architecture module is then refined with algorithmic details optimized for hardware implementation through a sequence of semantic preserving transformations. Finally, the functional equivalence between the refined module and its manual RTL implementation is formally verified. As a proof-of-concept, an RTL model is also automatically generated from the behavioral model through high level synthesis (HLS).
-</h5>
-    </p>
-  </li>
-
-  </ul>
+      </div>
+    </td>
+    </tr>
+                              
+</table>
+  
 
 </div>
 
