@@ -20,4 +20,14 @@ Abstract: Abstract: In this talk we describe aspects of formal incorporated and 
 ====================================================================================
 Name: Caroline Trippel 
 
+Title: Scalable Assurance via Verifiable Hardware-Software Contracts
+
+Abstract:
+Hardware-software (HW-SW) contracts are critical for high-assurance computer systems design and an enabler for software design/analysis tools that find and repair hardware-related bugs in programs. E.g., memory consistency models (MCMs) define what values shared memory loads can return in a parallel program. Emerging security contracts define what program data is susceptible to leakage via hardware side-channels. However, these contracts and the analyses they support are useless if we cannot guarantee microarchitectural compliance, which is a ``grand challenge.'' Notably, some contracts are still evolving e.g., security contracts), making hardware compliance a moving target. Even for mature contracts, comprehensively verifying that a complex microarchitecture implements some abstract contract is a time-consuming endeavor involving teams of engineers, which typically requires resorting to incomplete proofs.  Our work takes a radically different approach to the challenge above by synthesizing HW-SW contracts from RTL implementations. This talk will give an overview of our recent work in synthesizing formally proven-correct HW-SW contracts from RTL to support concurrency and security verification of (processor) microarchitectures.
+
+Bio:
+Caroline Trippel is an Assistant Professor in the Computer Science and Electrical Engineering Departments at Stanford University working in the area of computer architecture. A central theme of her work is leveraging formal methods techniques to design and verify hardware systems in order to ensure that they can provide correctness and security guarantees for the applications they intend to support. Trippel's research has influenced the design of the RISC-V ISA memory consistency model both via her formal analysis of its draft specification and her subsequent participation in the RISC-V Memory Model Task Group. Additionally, her work produced a novel methodology and tool that synthesized two new variants of the now-famous Meltdown and Spectre attacks. Trippel's research has been recognized with IEEE Top Picks distinctions, the 2020 ACM SIGARCH/IEEE CS TCCA Outstanding Dissertation Award, and the 2020 CGS/ProQuest® Distinguished Dissertation Award in Mathematics, Physical Sciences, & Engineering. She was also awarded an NVIDIA Graduate Fellowship (2017-2018) and selected to attend the 2018 MIT Rising Stars in EECS Workshop.
+
+
+
 
