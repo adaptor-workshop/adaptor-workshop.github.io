@@ -12,6 +12,14 @@ Abstract: Correctness assurance needs to be a first principle in accelerator des
 ====================================================================================
 Name: Gilbert Bernstein 
 
+Title: Can We Eliminate the Performance vs. Correctness Tradeoff When Writing Low-Level HPC Code?
+
+Abstract:
+Most applications benefiting from accelerators (especially ML accelerators) rely on hand-optimized high-performance kernel libraries to get access to new hardware, and ensure a high level of performance.  However, these kernel libraries are still written and optimized by hand, at great expense using low-level C and assembly code.  This is because the performance engineers who write this code, (like the hardware designers on the other side of the ISA from them) require control over the design.  What if we designed programming languages specially tailored to the needs of these programmers?
+
+I will discuss two different “user-scheduled” languages we’ve built along these lines.  (1) Exo is an imperative language which turns the compiler “inside out” by externalizing control of code optimization directly to the user, and by replacing hardware-specific backends (the compiler writers’ responsibility) with user-level libraries (the performance engineers’ responsibility).  (2) ATL is a simple functional tensor language, which we have embedded in Coq.  Rewrites of ATL programs thereby become lemmas, and user-scheduling directives become proof tactics.  These languages match the performance of highly tuned linear algebra, neural net and image processing kernels by using formal verification machinery to expedite the existing optimization process of low-level software performance engineers.
+
+
 ====================================================================================
 Title: Formal successes & frontiers in XLS' High Level Synthesis toolchain
 Name: Chris Leary
@@ -27,6 +35,9 @@ Hardware-software (HW-SW) contracts are critical for high-assurance computer sys
 
 Bio:
 Caroline Trippel is an Assistant Professor in the Computer Science and Electrical Engineering Departments at Stanford University working in the area of computer architecture. A central theme of her work is leveraging formal methods techniques to design and verify hardware systems in order to ensure that they can provide correctness and security guarantees for the applications they intend to support. Trippel's research has influenced the design of the RISC-V ISA memory consistency model both via her formal analysis of its draft specification and her subsequent participation in the RISC-V Memory Model Task Group. Additionally, her work produced a novel methodology and tool that synthesized two new variants of the now-famous Meltdown and Spectre attacks. Trippel's research has been recognized with IEEE Top Picks distinctions, the 2020 ACM SIGARCH/IEEE CS TCCA Outstanding Dissertation Award, and the 2020 CGS/ProQuest® Distinguished Dissertation Award in Mathematics, Physical Sciences, & Engineering. She was also awarded an NVIDIA Graduate Fellowship (2017-2018) and selected to attend the 2018 MIT Rising Stars in EECS Workshop.
+
+====================================================================================
+Name: Sharad Malik 
 
 
 
