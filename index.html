@@ -42,6 +42,12 @@
   .content h2 {
   font-size: 30px;
   }  
+
+  .talk-description { 
+    list-style-position: inside;
+    padding-left: 0;
+  }
+
   /* Style the tab */
   .tab {
     overflow: hidden;
@@ -334,8 +340,26 @@
         <div class="sr2"> George Van Ness Lothrop Professor in Engineering at Princeton University</div>
       </td>
       <td class="std">
-        <div class="sr1mute">Invited talk details to be added soon...     </div>
-        <div class="sr2mute">Abstract:
+        <div class="sr1">Invited talk: Generalizing the ISA to the ILA: A Software/Hardware Interface for 
+          Accelerator-rich Platforms
+          </div>
+        <div class="sr2">Abstract:
+          The Instruction-Set Architecture (ISA) has long served as the software/hardware interface for programmable processors. The ISA simultaneously serves as a specification for the hardware implementation, and as an abstraction of the hardware for software development. With the advent of multiprocessors, the memory consistency model (MCM) provided the software/hardware interface for processor interactions through shared memory. We are now in an era where accelerator-rich platforms are widely used to deliver the power-performance requirements of emerging applications. Unfortunately, there is no widely accepted software/hardware interface for these platforms - this has implications for both hardware and software development. 
+<br/><br/>
+My group, in collaboration with others, has been working on the Instruction-Level Abstraction (ILA) as a software-hardware interface that generalizes the notion of ISAs to accelerators. The ILA model of an accelerator is a functional model that defines the response of the accelerator to commands at its interface. These commands serve as “instructions” for the accelerator. Further, we have developed the ILA-MCM model for how the operational ILA model can be integrated with an axiomatic memory consistency model for a detailed functional specification that includes accelerator-processor interactions through shared memory.
+<br/><br/>
+In this talk I will describe the ILA model, and its application to different use cases for accelerator-rich platforms:
+<ul class="talk-description">
+  <li>
+Simulation and co-simulation: Show how this model enables automated generation of executable functional models (C/C++/SystemC) that can be used in hardware simulation and hardware-software co-simulation
+</li><li>
+Formal hardware verification: Show how the formal ILA model can be used for formal verification of the hardware implementation and hardware-software co-verification
+</li><li>
+Memory consistency: Show how the ILA-MCM model can be used to reason about correctness of code executing across processors and accelerators for a given MCM
+</li><li>
+Compilation to accelerators: Show how the ILA instructions can be used in a compiler flow targeting specialized accelerators - in particular a compiler flow for deep-learning accelerators using the TVM compiler framework.
+</li>
+</ul>
         </div>
       </td>
       </tr>
